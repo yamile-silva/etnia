@@ -1,0 +1,134 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Laila', sans-serif;
+    width: 100%;
+    overflow:hidden;
+    
+}
+
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("Imagenes/inicio.jpg");
+    min-height: 100%;
+}
+.enc{
+    display: flex;
+    justify-content: center;
+}
+.enc h1{
+    position:relative;
+    color:white;
+    width:max-content;
+}
+
+.contenido div{
+    display: flex;
+    justify-content: center;
+}
+.contenido{
+    left: 250px;
+    position: relative;
+    margin-top: 20px;
+    width:900px;
+    height: 400px;
+    background: rgba(0, 0, 0,0.85);
+    color: #fff;
+    padding: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+th{
+    background-color:#a70d1f ;
+    color: white;
+}
+
+td,th{
+    width: 350px;
+    border: 2px solid black;
+    padding-bottom: 10px;
+    padding-top:10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.Datos{
+    left: 250px;
+    position: relative;
+    right: 250px;
+}
+.Datos b{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+select{
+    color: white;
+    background-color: rgba(0, 0, 0,0.85);
+    padding: 5px;
+    border: none;
+}
+
+.imprimirYSalir button {
+    background-color: #b80f22; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    
+    width: 90px;
+    height: 40px;
+    border-radius: 10%;
+
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.imprimirYSalir button:hover{
+    color:#000!important;
+    background-color:#ccc!important
+}
+input{
+    position: absolute;
+    font-weight: bold;
+    
+    border:none;
+    display:flex;
+    width: 120px;
+    height: 40px;
+    padding: 5px 20px;
+    font-size: 20px!important;
+    font-family: 'Lobster', cursive;
+    overflow:hidden;
+    background: #b80f22;
+    color:rgb(12, 0, 0);
+    cursor:pointer;
+    border-radius: 30px;
+    align-items: center;
+    left: 245px;
+    bottom: 330px;
+}
+input:hover{
+    background-color:rgb(255, 255, 255)!important;
+    color:rgb(0, 0, 0)!important
+}
+.imprimirYSalir .b1 {
+    margin-top: 9px;
+    margin-left: 1050px;
+}

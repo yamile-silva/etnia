@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="Imagenes/logo etnia.jpg" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="normalize.css">
+<link rel="stylesheet" type="text/css" href="boleta1.css">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<meta charset="UTF-8">
+<title>BOLETA</title>
+
+<body>
+
+
+  <div id="imprimible" class="bgimg filter">
+
+
+    <div class="datos">
+      <h2>BOLETA DE PAGO</h2>
+      <script>
+
+
+        var fecha = new Date();
+
+        var numeroMesa = "M001";
+        var total = "290.0";
+        var numeroBoleta = "001";
+        var fecha = new Date();
+
+
+
+        function generarBoleta() {
+
+          document.write(fecha.getDate() + "/" + (fecha.getMonth() + 1) + "/" + fecha.getFullYear() + "</br>" + "</br>");
+          document.write("Numero Mesa:    " + numeroMesa + "<br>" + "<br>")
+          document.write("Total:    " + total + "<br>" + "<br>");
+        }
+
+        generarBoleta()
+
+        function alertaPago(){
+          alert("El pago se realizo con exito");
+        }
+
+      </script>
+
+      <table style="width:580px">
+        <tr>
+          <th>CANTIDAD</th>
+          <th>PRODUCTO</th>
+          <th>PRECIO</th>
+          <th>PRECIO_TOTAL</th>
+
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>C001</td>
+          <td>25.0</td>
+          <td>50.0</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>B002</td>
+          <td>30.0</td>
+          <td>60.0</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>C002</td>
+          <td>35.0</td>
+          <td>70.0</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>B003</td>
+          <td>10.0</td>
+          <td>30.0</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>C003</td>
+          <td>40.0</td>
+          <td>80.0</td>
+        </tr>
+      </table>
+     
+      <input type="button" onclick="window.print()" value="Imprimir">
+   
+   </div>
+    <div class="botones">
+      <button class="b1"><a href="index.html">
+      SALIR </a>
+      </button>
+</body>
+
+</html>

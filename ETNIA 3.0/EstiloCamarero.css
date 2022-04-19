@@ -1,0 +1,132 @@
+.camarero-box{
+    width: 500px;
+    height: 600px;
+    background: rgba(0, 0, 0,0.85);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.camarero-box  .avatarAdmi{
+    width: 130px;
+    height: 130px;
+    border-radius: 75%;
+    position: absolute;
+    top: 20px;
+    left: 190px;
+}
+
+.camarero-box  h1{
+    margin: 0;
+    margin-top:95px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 33px;
+    font-family: 'Lobster', cursive;
+}
+
+i:first-of-type{
+    position: relative;
+    font-size: 50px;
+    top: 40px;
+    left: 30px;
+    text-align: right;
+}
+i:nth-of-type(2){
+    position: relative;
+    font-size: 50px;
+    top: 29px;
+    left: 40px;
+    text-align: right;
+}
+.camarero-box .boton1{
+    position: relative;
+    border:none;
+    display:flex;
+    width: 150px;
+    height: 40px;
+    padding: 8px 30px 8px 30px;
+    font-size: 325px!important;
+    font-family: 'Lobster', cursive;
+    overflow:hidden;
+    background: #b80f22;
+    color:rgb(12, 0, 0);
+    cursor:pointer;
+    border-radius: 30px;
+    align-items: center;
+    left: 100px;
+    bottom: 30px;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+.camarero-box .boton2{
+    position: absolute;
+    font-weight: bold;
+
+    border:none;
+    display:flex;
+    width: 150px;
+    height: 40px;
+    padding: 8px 5px 8px 55px;
+    font-size: 35px!important;
+    font-family: 'Lobster', cursive;
+    overflow:hidden;
+    background: #b80f22;
+    color:rgb(12, 0, 0);
+    cursor:pointer;
+    border-radius: 30px;
+    align-items: center;
+    left: 150px;
+    bottom: 150px;
+}
+
+
+.boton1:hover{
+    background-color:rgb(253, 253, 253)!important;
+    color:rgb(12, 0, 0)!important
+}
+
+.boton2:hover{
+    background-color:rgb(255, 255, 255)!important;
+    color:rgb(0, 0, 0)!important
+}
+
+
+
+.bgimg div1{
+    position:absolute;
+    top:85%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+    -ms-transform:translate(-50%,-50%);
+}
+
+
+.log-out .boton3{
+    border:none;
+    margin: 20px;
+    padding:4px 8px;
+    font-size:30px!important;
+    overflow:hidden;
+    color:rgb(236, 227, 227);
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    user-select:none;
+    text-decoration:none;
+    font-family: 'Lobster', cursive;
+
+}
+
+
+.boton3:hover{
+    background-color:rgba(255, 255, 255,0)!important;
+    color:rgb(0, 0, 0)!important;
+    
+}
+

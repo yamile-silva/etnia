@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagenes/logo etnia.jpg" type="image/x-icon">
+    <title>Pedir</title>
+    <script src="https://kit.fontawesome.com/b997ae16aa.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="estiloPedir.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Pedir.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="tabs">
+            <li><a href="#tab1"><span class="fas fa-music"></span><span class="tab-text">Canciones</span></a></li>
+            <li><a href="#tab2"><span class="fas fa-hamburger"></span><span class="tab-text">Comidas</span></a></li>
+            <li><a href="#tab3"><span class="fas fa-beer"></span><span class="tab-text">Bebidas</span></a></li>
+           
+        </ul>
+
+        <div class="secciones">
+            <article id="tab1">
+            <h1 style="text-align: center;">Canciones más pedidas!!</h1> 
+                <div class="datatable-container">
+                    <div class="header-tools">
+                        <div class="tools">
+                            <ul>
+                                <li><span><input type="checkbox"></span></li>
+                                <li>
+                                    <button>
+                                        <i class="material-icons">zoom_in</i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <i class="material-icons">zoom_out</i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <i class="material-icons">delete</i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <i class="material-icons">search</i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search">
+                            <input type="text" name="" id="" class="search-input">
+                        </div>
+                    </div>
+
+
+                    <table style="margin: 0 auto;" class="datatable" border=3">
+                        <thead>
+                            <tr>
+                                <th>ALBUM</th>
+                                <th>DETALLES</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr> 
+                                <td rowspan="3"><img src="Imagenes/ALBUM 1.jpg" > </td>
+                                <td style="border-bottom: 1px;"> Canción   :   PEPAS</td>
+                                <td rowspan="3"><p style="height: inherit; width: 100%; text-align: center;" ><a class="boton">agregar</a></p></td>  
+                            </tr>
+
+                            <tr>
+                                <td style="border: inset 0pt;">Artista  :  Farruko</td>
+                            </tr>
+
+                            <tr>
+                                <td style="border: inset 0pt;">Año       :    2021</td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td rowspan="3"><img src="Imagenes/ALBUM 2.jpg" > </td>
+                                <td style="border-bottom: 1px;"> Canción   :  YONAGUNI</td>
+                                <td rowspan="3"><p style="height: inherit; width: 100%; text-align: center;" ><a class="boton">agregar</a></p></td>  
+                            </tr>
+
+                            <tr>
+                                <td style="border: inset 0pt;">Artista  :  Bad Bunny</td>
+                            </tr>
+
+                            <tr>
+                                <td style="border: inset 0pt;">Año       :    2021</td>
+                            </tr>
+
+
+
+
+                            <tr>
+                                <td rowspan="3"><img src="Imagenes/ALBUM 3.jpg" > </td>
+                                <td style="border-bottom: 1px;"> Canción   :   FULANITO</td>
+                                <td rowspan="3"><p style="height: inherit; width: 100%; text-align: center;" ><a class="boton">agregar</a></p></td>  
+                            </tr>
+
+                            <tr>
+                                <td style="border: inset 0pt;">Artista  :  Becky G & El Alfa</td>
+                            </tr>
+
+                            <tr>
+                                <td style="border: inset 0pt;">Año       :    2021</td>
+                            </tr>
+
+
+        
+                        </tbody>
+                    </table>
+              
+
+                    <div class="footer-tools">
+
+                        <div class="list-items">
+                            Ver
+                            <select name="n-entries" id="n-entries">
+                                <option value="15">2</option>
+                                <option value="10" selected>3</option>
+                                <option value="15">5</option>
+                            </select>
+                            Canciones
+                        </div>
+
+                        <div class="pages">
+                            <ul>
+                                <li><span class="active">1</span></li>
+                                <li><button>2</button></li>
+                                <li><button>3</button></li>
+                                <li><button>4</button></li>
+                                <li><span>...</span></li>
+                                <li><button>9</button></li>
+                                <li><button>10</button></li>
+                            </ul>
+                        </div>
+                            
+
+                    </div>
+                </div>
+            
+            </article>
+           
+              <article id="tab2">
+                <h1 style="text-align: center;"> Pide tu plato preferido!!</h1>
+                
+
+                <div class="datatable-container">
+                    <div class="header-tools">
+                        <div class="tools">
+                            <ul>
+                                <li><span><input type="checkbox"></span></li>
+                                <li>
+                                    <button>
+                                        <i class="material-icons">zoom_in</i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <i class="material-icons">zoom_out</i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <i class="material-icons">delete</i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <i class="material-icons">search</i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search">
+                            <input type="text" name="" id="" class="search-input">
+                        </div>
+                    </div>
+
+
+                    <table style="margin: 0 auto;" class="datatable" border=3">
+                        <thead>
+                         
+                        </thead>
+
+                        <tbody>
+                            <tr> 
+                                <td rowspan="3"><img src="Imagenes/COMIDA 1.png" > </td>
+                                <td colspan="4" style="border-bottom: 1px;">MAKI PASSION</td> 
+                            </tr>
+
+                            <tr>
+                                <td colspan="4" style="border: inset 0pt;">Relleno de langostino empanizado y palta, cubierto con pescado del día en salsa passion y coolie de maracuyá</td>
+                            </tr>
+
+                           <tr>
+                                <td><button><i class="material-icons">remove_circle_outline</i></button></td>
+                                <td style="background-color: aliceblue;">        </td>
+                                <td><button><i class="material-icons">add_circle_outline</i></button></td>
+                                <td><p style="height: inherit; width: 100%; text-align: center;" ><a class="boton">Pedir!</a></p></td>
+                            </tr>
+
+
+
+                            <tr> 
+                                <td rowspan="3"><img src="Imagenes/COMIDA 2.jpg" > </td>
+                                <td colspan="4" style="border-bottom: 1px;">SALCHIPOLLO ESPECIAL</td> 
+                            </tr>
+
+                            <tr>
+                                <td colspan="4" style="border: inset 0pt;">Con Hamburguesa, Pollo, Tocino, Hotdog Y Huevo </td>
+                            </tr>
+
+                           <tr>
+                                <td><button><i class="material-icons">remove_circle_outline</i></button></td>
+                                <td style="background-color: aliceblue;">        </td>
+                                <td><button><i class="material-icons">add_circle_outline</i></button></td>
+                                <td><p style="height: inherit; width: 100%; text-align: center;" ><a class="boton">Pedir!</a></p></td>
+                            </tr>
+
+
+
+
+                            <tr> 
+                                <td rowspan="3"><img src="Imagenes/COMIDA 3.jpg" > </td>
+                                <td colspan="4" style="border-bottom: 1px;">ALITAS BBQ</td> 
+                            </tr>
+
+                            <tr>
+                                <td colspan="4" style="border: inset 0pt;">Alitas de pollo + salsa bbq + papas artesanales</td>
+                            </tr>
+
+                            <tr>
+                                <td><button><i class="material-icons">remove_circle_outline</i></button></td>
+                                <td style="background-color: aliceblue;">        </td>
+                                <td><button><i class="material-icons">add_circle_outline</i></button></td>
+                                <td><p style="height: inherit; width: 100%; text-align: center;" ><a class="boton">Pedir!</a></p></td>
+                            </tr>
+
+        
+                        </tbody>
+                    </table>
+              
+
+                    <div class="footer-tools">
+
+                        <div class="list-items">
+                            Ver
+                            <select name="n-entries" id="n-entries">
+                                <option value="15">2</option>
+                                <option value="10" selected>3</option>
+                                <option value="15">5</option>
+                            </select>
+                            Platillos
+                        </div>
+
+                        <div class="pages">
+                            <ul>
+                                <li><span class="active">1</span></li>
+                                <li><button>2</button></li>
+                                <li><button>3</button></li>
+                                <li><button>4</button></li>
+                                <li><button>5</button></li>
+                                <li><button>6</button></li>
+                            </ul>
+                        </div>
+                            
+
+                    </div>
+                </div>
+
+
+
+
+
+
+              </article>
+
+              <article id="tab3">
+                <h1 style="text-align: center;">Pide el trago de tu preferencia!</h1>
+                
+                <div class="datatable-container">
+                    <div class="header-tools">
+                        <div class="tools">
+                            <ul>
+                                <li><span><input type="checkbox"></span></li>
+                                <li>
+                                    <button>
+                                        <i class="material-icons">zoom_in</i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <i class="material-icons">zoom_out</i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <i class="material-icons">delete</i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <i class="material-icons">search</i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search">
+                            <input type="text" name="" id="" class="search-input">
+                        </div>
+                    </div>
+
+
+                    <table style="margin: 0 auto;" class="datatable" border=3">
+                        <thead>
+                         
+                        </thead>
+
+                        <tbody>
+                            <tr> 
+                                <td rowspan="3"><img src="Imagenes/BEBIDA 1.jfif" > </td>
+                                <td colspan="4" style="border-bottom: 1px;">PIÑA COLADA</td> 
+                            </tr>
+
+                            <tr>
+                                <td colspan="4" style="border: inset 0pt;">bebida cuyos ingredientes principales son la piña, la crema de coco y el ron.</td>
+                            </tr>
+
+                           <tr>
+                                <td><button><i class="material-icons">remove_circle_outline</i></button></td>
+                                <td style="background-color: aliceblue;">        </td>
+                                <td><button><i class="material-icons">add_circle_outline</i></button></td>
+                                <td><p style="height: inherit; width: 100%; text-align: center;" ><a class="boton">Pedir!</a></p></td>
+                            </tr>
+
+
+
+                            <tr> 
+                                <td rowspan="3"><img src="Imagenes/BEBIDA 2.png" > </td>
+                                <td colspan="4" style="border-bottom: 1px;">MACHUPICCHU</td> 
+                            </tr>
+
+                            <tr>
+                                <td colspan="4" style="border: inset 0pt;"> pizco, jugo de naranja, jarabe de granadina y  menta verde</td>
+                            </tr>
+
+                           <tr>
+                                <td><button><i class="material-icons">remove_circle_outline</i></button></td>
+                                <td style="background-color: aliceblue;">        </td>
+                                <td><button><i class="material-icons">add_circle_outline</i></button></td>
+                                <td><p style="height: inherit; width: 100%; text-align: center;" ><a class="boton">Pedir!</a></p></td>
+                            </tr>
+
+
+
+
+                            <tr> 
+                                <td rowspan="3"><img src="Imagenes/BEBIDA 3.jpg" > </td>
+                                <td colspan="4" style="border-bottom: 1px;">CHILCANO DE FRESA</td> 
+                            </tr>
+
+                            <tr>
+                                <td colspan="4" style="border: inset 0pt;">Bebida hecho a base de pisco y jugo de fresa</td>
+                            </tr>
+
+                            <tr>
+                                <td><button><i class="material-icons">remove_circle_outline</i></button></td>
+                                <td style="background-color: aliceblue;">        </td>
+                                <td><button><i class="material-icons">add_circle_outline</i></button></td>
+                                <td><p style="height: inherit; width: 100%; text-align: center;" ><a class="boton">Pedir!</a></p></td>
+                            </tr>
+
+        
+                        </tbody>
+                    </table>
+              
+
+                    <div class="footer-tools">
+
+                        <div class="list-items">
+                            Ver
+                            <select name="n-entries" id="n-entries">
+                                <option value="15">2</option>
+                                <option value="10" selected>3</option>
+                                <option value="15">5</option>
+                            </select>
+                            Platillos
+                        </div>
+
+                        <div class="pages">
+                            <ul>
+                                <li><span class="active">1</span></li>
+                                <li><button>2</button></li>
+                                <li><button>3</button></li>
+                                <li><button>4</button></li>
+                                <li><button>5</button></li>
+                                <li><button>6</button></li>
+                            </ul>
+                        </div>
+                            
+
+                    </div>
+                </div>
+
+
+
+              </article>
+        </div>
+    </div>
+    <div class="botones">
+        <button class="b1"><a href="index.html">
+        SALIR </a>
+        </button>
+        <button class="b2"><a href="boleta1.html">
+            PAGAR </a>
+            </button>
+    </div>
+</body>
+</html>

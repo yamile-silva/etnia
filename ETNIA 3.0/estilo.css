@@ -1,0 +1,119 @@
+body,
+html {
+    height: 100%
+}
+
+body {
+    font-family: 'Laila', sans-serif;
+}
+
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("Imagenes/inicio.jpg");
+    min-height: 100%;
+}
+
+.bgimg div{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%); 
+    -ms-transform:translate(-50%,-50%);
+}
+.box-inicio{
+    width: 620px;
+    height: 620px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 50px;
+}
+.center{
+    text-align:center!important;
+}
+
+.filter{
+    filter:grayscale(50%);
+}
+
+.inicio{
+    color:#fff!important;
+    font-size: 80px;
+    margin-bottom: 250px;
+}
+
+.inicio-box{
+    width:600px;
+    height: 600px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.boton001{
+    border-radius: 30px;
+    display:inline-block;
+    padding:8px 16px;
+    font-size:  42px !important;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    user-select:none;
+    color:#fff!important;
+    background-color:#000!important;
+    border: solid 1px #fff;
+}
+
+
+
+.boton001:hover{
+    color:#000!important;
+    background-color:#a70d1f!important;
+    border:  solid 1px #a70d1f;
+}
+
+.boton002{
+    border-radius: 30px;
+    display:inline-block;
+    padding:8px 16px;
+    font-size:  26px !important;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    user-select:none;
+    color:#fff!important;
+    background-color:#000!important;
+    border: solid 1px #fff;
+}
+
+
+
+.boton002:hover{
+    color:#000!important;
+    background-color:#a70d1f!important;
+    border:  solid 1px #a70d1f;
+}
+.o{
+    margin-top:36px;
+    padding:10px;
+}

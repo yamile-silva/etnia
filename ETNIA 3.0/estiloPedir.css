@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+:root{
+    --primary-color: white;
+    --secondary-color: rgb(61, 68, 73);
+    --highlight-color: #b80f22;
+
+    --dt-status-available-color: greenyellow;
+    --dt-status-away-color: lightsalmon;
+    --dt-status-offline-color: lightgray;
+
+    --dt-padding: 12px;
+    --dt-padding-s: 6px;
+    --dt-padding-xs: 2px;
+
+    --dt-border-radius: 3px;
+
+    --dt-background-color-container: #000000;
+    --dt-border-color: var(--secondary-color);
+    --dt-bg-color: var(--highlight-color);
+    --dt-text-color: var(--primary-color);
+    --dt-bg-active-button: var(--highlight-color);
+    --dt-text-color-button: var(--primary-color);
+    --dt-text-color-active-button: var(--primary-color);
+    --dt-hover-cell-color: var(--highlight-color);
+    --dt-even-row-color: var(--secondary-color);
+    --dt-focus-color: var(-highlight-color);
+    --dt-input-background-color: var(--secondary-color);
+    --dt-input-color: var(--primary-color);
+}
+
+body,
+html {
+    min-height: 100%;
+}
+.material-icons{
+    font-size: 16px;
+}
+
+.datatable-container{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--dt-background-color-container);
+    border-radius: var(--dt-border-radius);
+    color: var(--dt-text-color);
+    width: 600px;
+    margin: 0 auto;
+    font-size: 12px;
+  
+
+}
+
+#div10{
+    overflow-y:scroll;
+     height: 500px;  
+}
+
+#div10  thead tr th{
+  position: sticky;
+     top:0; 
+     background-color: darkslategrey ; 
+  
+}
+#div11{
+    overflow-y:scroll;
+     height: 500px;  
+}
+
+#div11  thead tr th{
+  position: sticky;
+     top:0; 
+     background-color: darkslategrey ; 
+  
+}
+
+.datatable-container .header-tools{
+    border-bottom: solid 1px var(--dt-border-color);
+    padding: var (--dt-padding);
+    display:flex;
+    align-items: baseline;
+}
+
+.datatable-container .header-tools .search{
+    width: 30%;
+}
+
+.datatable-container .header-tools .search .search-input{
+    width: 100%;
+    background-color: var(--dt-input-background-color);
+    display: block;
+    box-sizing: border-box;
+    border-radius: var(--dt-border-radius);
+    border: solid 1px var(--dt-border-color);
+    color: var(--dt-input-color);
+}
+
+.datatable-container .header-tools .tools{
+    width: 70%;
+}
+
+.datatable-container .header-tools .tools ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+
+.datatable-container .header-tools .tools ul li{
+    display: inline-block;
+    margin: 0 var(--dt-padding-xs);
+    align-items: baseline;
+}
+
+.datatable-container .footer-tools{
+    padding: var(--dt-padding);
+    display: flex;
+    align-items: baseline;
+}
+
+.datatable-container .footer-tools .list-items{
+    width: 50%;
+}
+
+.datatable-container .footer-tools .pages{
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+}
+
+.datatable-container .footer-tools .pages ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.datatable-container .datatable th{
+font-weight:bolder;
+text-align: center;
+border-bottom: solid 1px var(--dt-border-color);
+color: darkorange;
+}
+
+
+.datatable-container .datatable tbody tr:hover{
+    background-color: var(--dt-hover-cell-color);
+}
+.datatable-container .datatable thead tr{
+    background-color: darkslategrey;
+}
+
+.datatable-container .footer-tools .pages ul li{
+    display: inline-block;
+    margin: 0 var(--dt-padding-xs);
+}
+
+
+
+.datatable-container.datatable tbody tr .ATENDIDO::after{
+    display:inline-block;
+    vertical-align:middle;
+}
+.datatable-container .datatable tbody tr .ATENDIDO::after{
+    content: "ATENDIDO";
+    color:transparent;
+}
+
+.datatable-container .datatable tbody tr .ATENDIDO::before{
+    content: "ATENDIDO";
+    color:chartreuse;
+}
+
+
+
+
+.datatable-container .footer-tools .pages ul li button,
+.datatable-container .header-tools .tools ul li button{
+    color: var(--dt-text-color-button);
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: var(--dt-border-radius);
+    background: transparent;
+    cursor: pointer;
+}
+
+.datatable-container .footer-tools .pages ul li button:hover,
+.datatable-container .header-tools .tools ul li button:hover
+.datatable-container  td button:hover
+{
+    background: var(--dt-bg-active-button);
+    color: var(--dt-text-color-active-button);
+}
+
+.datatable-container .header-tools .search button:hover
+{
+    background: var(--dt-bg-active-button);
+    color: var(--dt-text-color-active-button);  
+}
+
+.datatable-container .header-tools .tools button:hover
+{
+    background: var(--dt-bg-active-button);
+    color: var(--dt-text-color-active-button);  
+}
+
+.datatable-container .footer-tools .pages ul li span.active{
+    background-color: var(--dt-bg-color);
+    border-radius: var(--dt-border-radius);
+}
+
+.datatable-container .header-tools .tools ul li .active{
+    background-color: var(--dt-bg-color);
+    border-radius: var(--dt-border-radius);
+}
+
+
+
+
+
+.datatable-container .footer-tools .pages ul li button,
+.datatable-container .footer-tools .pages ul li span,
+.datatable-container .header-tools .tools ul li button{
+    padding: var(--dt-padding-s) var(--dt-padding);
+}
+
+.datatable-container .datatable{
+    border-collapse: collapse;
+    width: 100%;
+}
+.datatable-container .datatable,
+.datatable-container .datatable th,
+.datatable-container .datatable td{
+    padding: var(--dt-padding) var(--dt-padding);
+}
+
+
+.datatable-container .datatable th{
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: solid 3px var(--dt-border-color);
+}
+
+.datatable-container .datatable td{
+    border-bottom: solid 5px var(--dt-border-color);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background: #D4D4D4 ;
+    background-image: url("Imagenes/inicio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    font-family: 'Open sans';
+}
+
+.wrap{
+    width: 800px;
+    max-width: 90%;
+    margin: 30px auto ;
+}
+
+ul.tabs{
+    margin-top: 80px;
+    width: 100%;
+    background: #363636;
+    list-style: none;
+    display: flex;
+}
+
+ul.tabs li{
+width: 35%;
+}
+
+
+ul.tabs li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+
+  display: block;
+  padding: 20px 0px;
+}
+
+.active{
+    background: #b80f22;
+}
+
+ul.tabs li a .tab-text{
+    margin-left: 8px;
+}
+
+.secciones{
+    width: 100%;
+    background:var(--dt-background-color-container);
+
+}
+
+.secciones article{
+    padding: 30px;
+    color: #fff;
+}
+
+.secciones article p{
+    text-align: justify;
+}
+
+@media screen and (max-width: 700px){
+    ul.tabs li{
+        width: none;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    ul.tabs li a{
+        padding: 15px 0px;
+    }
+
+     ul.tabs li a .tab-text{
+        display: none;
+    }
+
+    .secciones article{
+        padding: 20px;
+    }
+}
+
+.boton{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    font-size:36px!important;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    user-select:none;
+    color:#fff!important;
+    background-color:#000!important
+}
+
+.boton:hover{
+    color:#000!important;
+    background-color:#ccc!important
+}
+
+#div1 {
+    overflow:scroll;
+    height:200px;
+    width:500px;
+}
+
+
+.botones .b1 {
+    
+    margin-left: 540px;
+}
+.botones .b2 {
+    
+    margin-left: 570px;
+}
+.botones button {
+    background-color: #b80f22; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    
+    width: 100;
+    height: 50px;
+
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.botones button:hover{
+    color:#000!important;
+    background-color:#ccc!important
+}

@@ -1,0 +1,86 @@
+body,
+html {
+    height: 100%
+}
+
+
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("Imagenes/inicio.jpg");
+    min-height: 100%;
+    text-align:center!important;
+}
+
+.search{
+    position: relative;
+    align-items: center;
+    text-align: right;
+    padding: 5px;
+}
+
+.search input{
+    width: 240px;
+    height: 40px;
+    margin: 10px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    border:1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.btn{
+    position: absolute;
+    top:20px;
+    right: 30px;
+    background: #b80f22;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color:#ccc;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.search:hover input{
+    width: 240px;
+}
+
+.search input:focus{
+    width: 240px;
+}
+
+#tabs, ul{
+    background-color:transparent!important;
+    align-items: center;
+    border: none;
+
+}
+
+.filter{
+    filter:grayscale(50%);
+}
+
+.productos{
+    width:min-content;
+    text-align:center!important;
+    border-collapse: collapse;
+    background-color: #ccc;
+    display:inline-block;
+    grid-template-columns: minmax(150px, 1.33fr) 296px;
+}
+
+th,td{
+    padding: 20px;
+}
+
+thead{
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+
